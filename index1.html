@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 40px;
+           
+            height: 5s00px;
+            width: 500px;
+            border: 1px solid rgba(1, 26, 1, 0.925);
+            padding: 20px;
+            margin: 5px;
+            
+            }
+        
+        h1 {
+            color: blue;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 350px;
+        }
+        h2{
+            position: relative;
+            left:150px;
+        }
+        #logg{
+            position: relative;
+            left:280px;
+        }
+        #choose{
+            width:250px;
+        }
+        #reg{
+            position: relative;
+            left:200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;" >Task 3</h1>
+    <h2 style="color: blue;" >Registration form</h2>
+    <div class="container">
+        
+        <form>
+            <table>
+                <tr>
+                    <td><b>First Name</b></td>
+                    <td><input type="text" name="firstname"></td>
+                </tr>
+                <tr>
+                    <td><b>Last Name</b></td>
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><b>Password</b></td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><b>Re-enter Password</b></td>
+                    <td><input type="password" name="repassword"></td>
+                </tr>
+                <tr>
+                    <td><b>Gender:</b></td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male <br>
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Age:</b></td>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <td><b>Phone Number</b></td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td><textarea name="address" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td><b>State</b></td>
+                    <td><input type="text" name="state"></td>
+                </tr>
+                <tr>
+                    <td><b>Country</b></td>
+                    <td id="choose">
+                        <select name="country">
+                            <option >Choose your country</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Languages known</b></td>
+                    <td>
+                        <input type="checkbox" name="lang" value="english"> English
+                        <input type="checkbox" name="lang" value="kannada"> Kannada
+                        <input type="checkbox" name="lang" value="hindi"> Hindi
+                        <input type="checkbox" name="lang" value="telugu"> Telugu
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="declaration" checked> Hereby I declare all the given details are true
+                    </td>
+                </tr>
+                <tr id="logg">
+                    <td colspan="2">
+                        <a href="https://acharya.ac.in" target="_blank">Log in to Acharya website</a>
+                    </td>
+                </tr>
+                <tr id="reg">
+                    <td colspan="2">
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Contacts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Königlich Essen</td>
+            <td>Philip Cramer</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
